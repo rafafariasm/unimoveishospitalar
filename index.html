@@ -5,75 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unimóveis Hospitalar</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Cabeçalho -->
+  <!-- Header -->
   <header>
-    <div class="logo">Unimóveis Hospitalar</div>
+    <h1>Unimóveis Hospitalar</h1>
     <nav>
-      <a href="#inicio">Início</a>
       <a href="#produtos">Produtos</a>
-      <a href="#sobre">Sobre</a>
+      <a href="#sobre">Sobre Nós</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a href="https://wa.me/55SEUNUMERO" class="btn-whats">WhatsApp</a>
   </header>
 
-  <!-- Seção inicial -->
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <h1>Soluções em móveis hospitalares</h1>
-      <p>Qualidade e confiança para clínicas e hospitais</p>
-      <a href="https://wa.me/55SEUNUMERO" class="btn">Solicitar orçamento</a>
-    </div>
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Soluções em móveis hospitalares e corporativos</h2>
+    <p>Qualidade e confiança em cada detalhe</p>
   </section>
 
-  <!-- Catálogo -->
+  <!-- Produtos -->
   <section id="produtos" class="catalogo">
     <h2>Produtos</h2>
-    <div class="grid">
-      <!-- Card de produto -->
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Cama Hospitalar">
-        <h3>Cama Hospitalar Elétrica</h3>
-        <p>Conforto e tecnologia para internação.</p>
-        <button onclick="abrirWhatsApp('Cama Hospitalar Elétrica')">Quero saber mais</button>
-      </div>
 
+    <!-- Categoria: Hospitalar -->
+    <h3 class="categoria-titulo">Hospitalar</h3>
+    <div class="grid">
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Poltrona Hospitalar">
+        <img src="Hospitalar/Cama Elétrica Hospitalar.png" alt="Cama Elétrica Hospitalar">
+        <h3>Cama Elétrica Hospitalar</h3>
+        <button onclick="abrirWhatsApp('Cama Elétrica Hospitalar')">Quero saber mais</button>
+      </div>
+      <div class="card">
+        <img src="Hospitalar/Poltrona Hospitalar.png" alt="Poltrona Hospitalar">
         <h3>Poltrona Hospitalar</h3>
-        <p>Resistência e ergonomia para acompanhantes.</p>
         <button onclick="abrirWhatsApp('Poltrona Hospitalar')">Quero saber mais</button>
       </div>
-
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Mesa de Mayo">
+        <img src="Hospitalar/Mesa de Mayo.png" alt="Mesa de Mayo">
         <h3>Mesa de Mayo</h3>
-        <p>Praticidade no apoio de materiais.</p>
         <button onclick="abrirWhatsApp('Mesa de Mayo')">Quero saber mais</button>
+      </div>
+      <div class="card">
+        <img src="Hospitalar/Carrinho Auxiliar.png" alt="Carrinho Auxiliar">
+        <h3>Carrinho Auxiliar</h3>
+        <button onclick="abrirWhatsApp('Carrinho Auxiliar')">Quero saber mais</button>
+      </div>
+    </div>
+
+    <!-- Categoria: Mobiliário -->
+    <h3 class="categoria-titulo">Mobiliário</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="Mobiliário/Armário Baixo em MDF.png" alt="Armário Baixo em MDF">
+        <h3>Armário Baixo em MDF</h3>
+        <button onclick="abrirWhatsApp('Armário Baixo em MDF')">Quero saber mais</button>
+      </div>
+      <div class="card">
+        <img src="Mobiliário/Cadeira Presidente.png" alt="Cadeira Presidente">
+        <h3>Cadeira Presidente</h3>
+        <button onclick="abrirWhatsApp('Cadeira Presidente')">Quero saber mais</button>
+      </div>
+      <div class="card">
+        <img src="Mobiliário/Mesa de Escritório em MDF.png" alt="Mesa de Escritório em MDF">
+        <h3>Mesa de Escritório em MDF</h3>
+        <button onclick="abrirWhatsApp('Mesa de Escritório em MDF')">Quero saber mais</button>
+      </div>
+    </div>
+
+    <!-- Categoria: Diversos -->
+    <h3 class="categoria-titulo">Diversos</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="Diversos/Carrinho de Transporte.png" alt="Carrinho de Transporte">
+        <h3>Carrinho de Transporte</h3>
+        <button onclick="abrirWhatsApp('Carrinho de Transporte')">Quero saber mais</button>
       </div>
     </div>
   </section>
 
-  <!-- Sobre nós -->
+  <!-- Sobre -->
   <section id="sobre" class="sobre">
-    <h2>Sobre nós</h2>
-    <p>A Unimóveis Hospitalar atua há anos no fornecimento de móveis hospitalares, oferecendo qualidade, segurança e atendimento personalizado.</p>
+    <h2>Sobre Nós</h2>
+    <p>
+      A Unimóveis Hospitalar oferece soluções em móveis hospitalares e mobiliário corporativo,
+      priorizando qualidade, segurança e conforto.
+    </p>
   </section>
 
   <!-- Contato -->
   <section id="contato" class="contato">
     <h2>Contato</h2>
-    <p>📞 (00) 0000-0000</p>
-    <p>📧 contato@unimoveis.com</p>
-    <a href="https://wa.me/55SEUNUMERO" class="btn">Fale conosco no WhatsApp</a>
+    <p>Fale conosco pelo WhatsApp e tire suas dúvidas!</p>
+    <button onclick="abrirWhatsApp('Olá, gostaria de mais informações')">Chamar no WhatsApp</button>
   </section>
 
-  <!-- Rodapé -->
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Unimóveis Hospitalar - Todos os direitos reservados</p>
+    <p>© 2025 Unimóveis Hospitalar - Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
