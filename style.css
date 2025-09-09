@@ -1,0 +1,135 @@
+:root {
+  --verde: #1fa67a;
+  --cinza: #f4f4f4;
+  --preto: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: var(--preto);
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--verde);
+}
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--preto);
+}
+
+header .btn-whats {
+  background: var(--verde);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  background: url("https://via.placeholder.com/1200x500") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--verde);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Catálogo */
+.catalogo {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.catalogo h2 {
+  margin-bottom: 2rem;
+  color: var(--verde);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--cinza);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card button {
+  background: var(--verde);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Sobre */
+.sobre, .contato {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.sobre h2, .contato h2 {
+  margin-bottom: 1rem;
+  color: var(--verde);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--cinza);
+  font-size: 0.9rem;
+}
