@@ -23,6 +23,29 @@ body{
   margin: 0 auto;
 }
 
+/* Botão voltar ao topo */
+#btn-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--verde);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+#btn-topo:hover {
+  background-color: var(--verde-escuro);
+}
+
 /* Header */
 .site-header{
   background: var(--branco);
