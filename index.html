@@ -10,22 +10,32 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="logo">Unimóveis <span>Hospitalar</span></div>
-      <nav class="main-nav">
+
+      <nav class="main-nav" aria-label="Navegação principal">
         <a href="#produtos">Produtos</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
       </nav>
-      <a class="btn-whats" href="#" onclick="abrirWhatsApp('Olá, tenho interesse nos produtos da Unimóveis')">WhatsApp</a>
+
+      <button class="btn-whats" onclick="abrirWhatsApp('Olá, gostaria de mais informações sobre os produtos')">
+        WhatsApp
+      </button>
     </div>
   </header>
 
   <main>
     <!-- Hero -->
     <section class="hero">
-      <div class="container">
-        <h1>Soluções em móveis hospitalares</h1>
-        <p>Qualidade, segurança e atendimento personalizado para clínicas, hospitais e consultórios.</p>
-        <a class="btn-primary" href="#produtos" role="button">Ver catálogo</a>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Soluções em móveis hospitalares</h1>
+          <p>Qualidade, segurança e atendimento personalizado para clínicas, hospitais e consultórios.</p>
+          <a class="btn-primary" href="#produtos">Ver catálogo</a>
+        </div>
+        <div class="hero-visual">
+          <!-- imagem ilustrativa, troque se quiser -->
+          <img src="https://via.placeholder.com/800x500?text=Unimóveis+Hospitalar" alt="Móveis hospitalares">
+        </div>
       </div>
     </section>
 
@@ -35,260 +45,286 @@
 
       <!-- Categoria: Hospitalar -->
       <h3 class="categoria-titulo">Hospitalar</h3>
-      <div class="grid">
-        <div class="card">
-          <img src="Hospitalar/Banqueta Hospitalar.png" alt="Banqueta Hospitalar">
-          <h4>Banqueta Hospitalar</h4>
-          <button onclick="abrirWhatsApp('Banqueta Hospitalar')">Quero saber mais</button>
-        </div>
+      <div class="carrossel-container" aria-roledescription="carrossel">
+        <button class="seta seta-esquerda" aria-label="Voltar" onclick="rolarCarrossel(this, -1)">&#10094;</button>
+        <div class="carrossel" role="list">
+          <!-- Lista completa Hospitalar -->
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Banqueta Hospitalar.png" alt="Banqueta Hospitalar">
+            <h4>Banqueta Hospitalar</h4>
+            <button onclick="abrirWhatsApp('Banqueta Hospitalar')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Berço Hospitalar.png" alt="Berço Hospitalar">
-          <h4>Berço Hospitalar</h4>
-          <button onclick="abrirWhatsApp('Berço Hospitalar')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Berço Hospitalar.png" alt="Berço Hospitalar">
+            <h4>Berço Hospitalar</h4>
+            <button onclick="abrirWhatsApp('Berço Hospitalar')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Cadeira para Obeso.png" alt="Cadeira para Obeso">
-          <h4>Cadeira para Obeso</h4>
-          <button onclick="abrirWhatsApp('Cadeira para Obeso')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Cadeira para Obeso.png" alt="Cadeira para Obeso">
+            <h4>Cadeira para Obeso</h4>
+            <button onclick="abrirWhatsApp('Cadeira para Obeso')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Cama Elétrica Hospitalar.png" alt="Cama Elétrica Hospitalar">
-          <h4>Cama Elétrica Hospitalar</h4>
-          <button onclick="abrirWhatsApp('Cama Elétrica Hospitalar')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Cama Elétrica Hospitalar.png" alt="Cama Elétrica Hospitalar">
+            <h4>Cama Elétrica Hospitalar</h4>
+            <button onclick="abrirWhatsApp('Cama Elétrica Hospitalar')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Cama Baixa Leito.png" alt="Cama Baixa Leito">
-          <h4>Cama Baixa Leito</h4>
-          <button onclick="abrirWhatsApp('Cama Baixa Leito')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Carro Beira Leito.png" alt="Carro Beira Leito">
+            <h4>Carro Beira Leito</h4>
+            <button onclick="abrirWhatsApp('Carro Beira Leito')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Carro de Emergência.png" alt="Carro de Emergência">
-          <h4>Carro de Emergência</h4>
-          <button onclick="abrirWhatsApp('Carro de Emergência')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Carro de Emergência.png" alt="Carro de Emergência">
+            <h4>Carro de Emergência</h4>
+            <button onclick="abrirWhatsApp('Carro de Emergência')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Escada Esmaltada.png" alt="Escada Esmaltada">
-          <h4>Escada Esmaltada</h4>
-          <button onclick="abrirWhatsApp('Escada Esmaltada')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Escada Esmaltada.png" alt="Escada Esmaltada">
+            <h4>Escada Esmaltada</h4>
+            <button onclick="abrirWhatsApp('Escada Esmaltada')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Escada INOX.png" alt="Escada INOX">
-          <h4>Escada INOX</h4>
-          <button onclick="abrirWhatsApp('Escada INOX')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Escada INOX.png" alt="Escada INOX">
+            <h4>Escada INOX</h4>
+            <button onclick="abrirWhatsApp('Escada INOX')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Mesa Auxiliar.png" alt="Mesa Auxiliar">
-          <h4>Mesa Auxiliar</h4>
-          <button onclick="abrirWhatsApp('Mesa Auxiliar')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Mesa Auxiliar.png" alt="Mesa Auxiliar">
+            <h4>Mesa Auxiliar</h4>
+            <button onclick="abrirWhatsApp('Mesa Auxiliar')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Mesa Ginecológica.png" alt="Mesa Ginecológica">
-          <h4>Mesa Ginecológica</h4>
-          <button onclick="abrirWhatsApp('Mesa Ginecológica')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Mesa Ginecológica.png" alt="Mesa Ginecológica">
+            <h4>Mesa Ginecológica</h4>
+            <button onclick="abrirWhatsApp('Mesa Ginecológica')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Mesa Semi Circular.png" alt="Mesa Semi Circular">
-          <h4>Mesa Semi Circular</h4>
-          <button onclick="abrirWhatsApp('Mesa Semi Circular')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Mesa Semi Circular.png" alt="Mesa Semi Circular">
+            <h4>Mesa Semi Circular</h4>
+            <button onclick="abrirWhatsApp('Mesa Semi Circular')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Mesa de Cabeceira em MDF.png" alt="Mesa de Cabeceira em MDF">
-          <h4>Mesa de Cabeceira em MDF</h4>
-          <button onclick="abrirWhatsApp('Mesa de Cabeceira em MDF')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Mesa de Cabeceira em MDF.png" alt="Mesa de Cabeceira em MDF">
+            <h4>Mesa de Cabeceira em MDF</h4>
+            <button onclick="abrirWhatsApp('Mesa de Cabeceira em MDF')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Mesa de Exame em MDF.png" alt="Mesa de Exame em MDF">
-          <h4>Mesa de Exame em MDF</h4>
-          <button onclick="abrirWhatsApp('Mesa de Exame em MDF')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Mesa de Exame em MDF.png" alt="Mesa de Exame em MDF">
+            <h4>Mesa de Exame em MDF</h4>
+            <button onclick="abrirWhatsApp('Mesa de Exame em MDF')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Mesa de Mayo.png" alt="Mesa de Mayo">
-          <h4>Mesa de Mayo</h4>
-          <button onclick="abrirWhatsApp('Mesa de Mayo')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Mesa de Mayo.png" alt="Mesa de Mayo">
+            <h4>Mesa de Mayo</h4>
+            <button onclick="abrirWhatsApp('Mesa de Mayo')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Mocho.png" alt="Mocho">
-          <h4>Mocho</h4>
-          <button onclick="abrirWhatsApp('Mocho')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Mocho.png" alt="Mocho">
+            <h4>Mocho</h4>
+            <button onclick="abrirWhatsApp('Mocho')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Negatoscópio 01 Corpo.png" alt="Negatoscópio 01 Corpo">
-          <h4>Negatoscópio (1 corpo)</h4>
-          <button onclick="abrirWhatsApp('Negatoscópio 01 Corpo')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Negatoscópio 01 Corpo.png" alt="Negatoscópio 01 Corpo">
+            <h4>Negatoscópio (01 Corpo)</h4>
+            <button onclick="abrirWhatsApp('Negatoscópio 01 Corpo')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Poltrona Hospitalar.png" alt="Poltrona Hospitalar">
-          <h4>Poltrona Hospitalar</h4>
-          <button onclick="abrirWhatsApp('Poltrona Hospitalar')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Poltrona Hospitalar.png" alt="Poltrona Hospitalar">
+            <h4>Poltrona Hospitalar</h4>
+            <button onclick="abrirWhatsApp('Poltrona Hospitalar')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Hospitalar/Suporte de Soro.png" alt="Suporte de Soro">
-          <h4>Suporte de Soro</h4>
-          <button onclick="abrirWhatsApp('Suporte de Soro')">Quero saber mais</button>
+          <div class="card" role="listitem">
+            <img src="Hospitalar/Suporte de Soro.png" alt="Suporte de Soro">
+            <h4>Suporte de Soro</h4>
+            <button onclick="abrirWhatsApp('Suporte de Soro')">Quero saber mais</button>
+          </div>
         </div>
-      </div> <!-- .grid -->
+        <button class="seta seta-direita" aria-label="Avançar" onclick="rolarCarrossel(this, 1)">&#10095;</button>
+      </div>
 
       <!-- Categoria: Mobiliário -->
       <h3 class="categoria-titulo">Mobiliário</h3>
-      <div class="grid">
-        <div class="card">
-          <img src="Mobiliário/Armário Baixo em MDF.png" alt="Armário Baixo em MDF">
-          <h4>Armário Baixo em MDF</h4>
-          <button onclick="abrirWhatsApp('Armário Baixo em MDF')">Quero saber mais</button>
-        </div>
+      <div class="carrossel-container" aria-roledescription="carrossel">
+        <button class="seta seta-esquerda" aria-label="Voltar" onclick="rolarCarrossel(this, -1)">&#10094;</button>
+        <div class="carrossel" role="list">
+          <!-- Lista completa Mobiliário -->
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Armário Baixo em MDF.png" alt="Armário Baixo em MDF">
+            <h4>Armário Baixo em MDF</h4>
+            <button onclick="abrirWhatsApp('Armário Baixo em MDF')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Armário Semi Aberto em MDF.png" alt="Armário Semi Aberto em MDF">
-          <h4>Armário Semi Aberto em MDF</h4>
-          <button onclick="abrirWhatsApp('Armário Semi Aberto em MDF')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Armário Semi Aberto em MDF.png" alt="Armário Semi Aberto em MDF">
+            <h4>Armário Semi Aberto em MDF</h4>
+            <button onclick="abrirWhatsApp('Armário Semi Aberto em MDF')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Armário de Aço.png" alt="Armário de Aço">
-          <h4>Armário de Aço</h4>
-          <button onclick="abrirWhatsApp('Armário de Aço')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Armário de Aço.png" alt="Armário de Aço">
+            <h4>Armário de Aço</h4>
+            <button onclick="abrirWhatsApp('Armário de Aço')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Armário em MDF 2.png" alt="Armário em MDF 2">
-          <h4>Armário em MDF (var. 2)</h4>
-          <button onclick="abrirWhatsApp('Armário em MDF 2')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Armário em MDF 2.png" alt="Armário em MDF 2">
+            <h4>Armário em MDF (var. 2)</h4>
+            <button onclick="abrirWhatsApp('Armário em MDF 2')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Armário em MDF.png" alt="Armário em MDF">
-          <h4>Armário em MDF</h4>
-          <button onclick="abrirWhatsApp('Armário em MDF')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Armário em MDF 3.png" alt="Armário em MDF 3">
+            <h4>Armário em MDF (var. 3)</h4>
+            <button onclick="abrirWhatsApp('Armário em MDF 3')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Arquivo de Aço.png" alt="Arquivo de Aço">
-          <h4>Arquivo de Aço</h4>
-          <button onclick="abrirWhatsApp('Arquivo de Aço')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Armário em MDF.png" alt="Armário em MDF">
+            <h4>Armário em MDF</h4>
+            <button onclick="abrirWhatsApp('Armário em MDF')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Arquivo em MDF.png" alt="Arquivo em MDF">
-          <h4>Arquivo em MDF</h4>
-          <button onclick="abrirWhatsApp('Arquivo em MDF')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Arquivo de Aço.png" alt="Arquivo de Aço">
+            <h4>Arquivo de Aço</h4>
+            <button onclick="abrirWhatsApp('Arquivo de Aço')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Arquivo em MDF - Branco.png" alt="Arquivo em MDF - Branco">
-          <h4>Arquivo em MDF (Branco)</h4>
-          <button onclick="abrirWhatsApp('Arquivo em MDF - Branco')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Arquivo em MDF - Branco.png" alt="Arquivo em MDF - Branco">
+            <h4>Arquivo em MDF (Branco)</h4>
+            <button onclick="abrirWhatsApp('Arquivo em MDF - Branco')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Cadeira ISO.png" alt="Cadeira ISO">
-          <h4>Cadeira ISO</h4>
-          <button onclick="abrirWhatsApp('Cadeira ISO')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Arquivo em MDF.png" alt="Arquivo em MDF">
+            <h4>Arquivo em MDF</h4>
+            <button onclick="abrirWhatsApp('Arquivo em MDF')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Cadeira Presidente.png" alt="Cadeira Presidente">
-          <h4>Cadeira Presidente</h4>
-          <button onclick="abrirWhatsApp('Cadeira Presidente')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Cadeira ISO.png" alt="Cadeira ISO">
+            <h4>Cadeira ISO</h4>
+            <button onclick="abrirWhatsApp('Cadeira ISO')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Cadeira Universitária.png" alt="Cadeira Universitária">
-          <h4>Cadeira Universitária</h4>
-          <button onclick="abrirWhatsApp('Cadeira Universitária')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Cadeira Presidente.png" alt="Cadeira Presidente">
+            <h4>Cadeira Presidente</h4>
+            <button onclick="abrirWhatsApp('Cadeira Presidente')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Estante de Aço.png" alt="Estante de Aço">
-          <h4>Estante de Aço</h4>
-          <button onclick="abrirWhatsApp('Estante de Aço')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Cadeira Universitária.png" alt="Cadeira Universitária">
+            <h4>Cadeira Universitária</h4>
+            <button onclick="abrirWhatsApp('Cadeira Universitária')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Gaveteiro em MDF.png" alt="Gaveteiro em MDF">
-          <h4>Gaveteiro em MDF</h4>
-          <button onclick="abrirWhatsApp('Gaveteiro em MDF')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Estante de Aço.png" alt="Estante de Aço">
+            <h4>Estante de Aço</h4>
+            <button onclick="abrirWhatsApp('Estante de Aço')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Longarina Estofada com Braço.png" alt="Longarina Estofada com Braço">
-          <h4>Longarina Estofada com Braço</h4>
-          <button onclick="abrirWhatsApp('Longarina Estofada com Braço')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Gaveteiro em MDF.png" alt="Gaveteiro em MDF">
+            <h4>Gaveteiro em MDF</h4>
+            <button onclick="abrirWhatsApp('Gaveteiro em MDF')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Longarina ISO.png" alt="Longarina ISO">
-          <h4>Longarina ISO</h4>
-          <button onclick="abrirWhatsApp('Longarina ISO')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Longarina Estofada com Braço.png" alt="Longarina Estofada com Braço">
+            <h4>Longarina Estofada com Braço</h4>
+            <button onclick="abrirWhatsApp('Longarina Estofada com Braço')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Mapoteca.png" alt="Mapoteca">
-          <h4>Mapoteca</h4>
-          <button onclick="abrirWhatsApp('Mapoteca')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Longarina Estofada sem Braço.png" alt="Longarina Estofada sem Braço">
+            <h4>Longarina Estofada sem Braço</h4>
+            <button onclick="abrirWhatsApp('Longarina Estofada sem Braço')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Mesa de Escritório em MDF 1.png" alt="Mesa de Escritório em MDF 1">
-          <h4>Mesa de Escritório em MDF 1</h4>
-          <button onclick="abrirWhatsApp('Mesa de Escritório em MDF 1')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Longarina ISO.png" alt="Longarina ISO">
+            <h4>Longarina ISO</h4>
+            <button onclick="abrirWhatsApp('Longarina ISO')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Mesa de Escritório em MDF 2.png" alt="Mesa de Escritório em MDF 2">
-          <h4>Mesa de Escritório em MDF 2</h4>
-          <button onclick="abrirWhatsApp('Mesa de Escritório em MDF 2')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Mapoteca.png" alt="Mapoteca">
+            <h4>Mapoteca</h4>
+            <button onclick="abrirWhatsApp('Mapoteca')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Mesa de Escritório em MDF 3.png" alt="Mesa de Escritório em MDF 3">
-          <h4>Mesa de Escritório em MDF 3</h4>
-          <button onclick="abrirWhatsApp('Mesa de Escritório em MDF 3')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Mesa de Escritório em MDF 1.png" alt="Mesa de Escritório em MDF 1">
+            <h4>Mesa de Escritório em MDF 1</h4>
+            <button onclick="abrirWhatsApp('Mesa de Escritório em MDF 1')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Mesa de Reunião em MDF.png" alt="Mesa de Reunião em MDF">
-          <h4>Mesa de Reunião em MDF</h4>
-          <button onclick="abrirWhatsApp('Mesa de Reunião em MDF')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Mesa de Escritório em MDF 2.png" alt="Mesa de Escritório em MDF 2">
+            <h4>Mesa de Escritório em MDF 2</h4>
+            <button onclick="abrirWhatsApp('Mesa de Escritório em MDF 2')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Mesa em Z.png" alt="Mesa em Z">
-          <h4>Mesa em Z</h4>
-          <button onclick="abrirWhatsApp('Mesa em Z')">Quero saber mais</button>
-        </div>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Mesa de Refeitório.png" alt="Mesa de Refeitório">
+            <h4>Mesa de Refeitório</h4>
+            <button onclick="abrirWhatsApp('Mesa de Refeitório')">Quero saber mais</button>
+          </div>
 
-        <div class="card">
-          <img src="Mobiliário/Mesa para Desktop.png" alt="Mesa para Desktop">
-          <h4>Mesa para Desktop</h4>
-          <button onclick="abrirWhatsApp('Mesa para Desktop')">Quero saber mais</button>
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Mesa de Reunião em MDF.png" alt="Mesa de Reunião em MDF">
+            <h4>Mesa de Reunião em MDF</h4>
+            <button onclick="abrirWhatsApp('Mesa de Reunião em MDF')">Quero saber mais</button>
+          </div>
+
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Mesa em Z.png" alt="Mesa em Z">
+            <h4>Mesa em Z</h4>
+            <button onclick="abrirWhatsApp('Mesa em Z')">Quero saber mais</button>
+          </div>
+
+          <div class="card" role="listitem">
+            <img src="Mobiliário/Mesa para Desktop.png" alt="Mesa para Desktop">
+            <h4>Mesa para Desktop</h4>
+            <button onclick="abrirWhatsApp('Mesa para Desktop')">Quero saber mais</button>
+          </div>
         </div>
-      </div> <!-- .grid -->
+        <button class="seta seta-direita" aria-label="Avançar" onclick="rolarCarrossel(this, 1)">&#10095;</button>
+      </div>
 
       <!-- Categoria: Diversos -->
       <h3 class="categoria-titulo">Diversos</h3>
-      <div class="grid">
-        <div class="card">
-          <img src="Diversos/Carrinho de Transporte.png" alt="Carrinho de Transporte">
-          <h4>Carrinho de Transporte</h4>
-          <button onclick="abrirWhatsApp('Carrinho de Transporte')">Quero saber mais</button>
+      <div class="carrossel-container" aria-roledescription="carrossel">
+        <button class="seta seta-esquerda" aria-label="Voltar" onclick="rolarCarrossel(this, -1)">&#10094;</button>
+        <div class="carrossel" role="list">
+          <div class="card" role="listitem">
+            <img src="Diversos/Carrinho de Transporte.png" alt="Carrinho de Transporte">
+            <h4>Carrinho de Transporte</h4>
+            <button onclick="abrirWhatsApp('Carrinho de Transporte')">Quero saber mais</button>
+          </div>
         </div>
+        <button class="seta seta-direita" aria-label="Avançar" onclick="rolarCarrossel(this, 1)">&#10095;</button>
       </div>
     </section>
 
