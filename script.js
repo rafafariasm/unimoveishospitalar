@@ -87,6 +87,17 @@ function abrirWhatsApp(produto) {
   window.open(url, "_blank");
 }
 
+function abrirPaginaProduto(nome, imagem, categoria) {
+  // Codificar parâmetros para URL
+  const params = new URLSearchParams();
+  params.append('nome', nome);
+  params.append('imagem', encodeURIComponent(imagem));
+  params.append('categoria', categoria);
+  
+  // Redirecionar para a página de detalhes do produto
+  window.location.href = `produto.html?${params.toString()}`;
+}
+
 function rolarCarrossel(botao, direcao) {
   const container = botao.parentElement.querySelector(".carrossel");
   if(!container) return;
