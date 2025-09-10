@@ -148,7 +148,6 @@ body{
   text-align:center;
   box-shadow: 0 6px 24px var(--sombra);
   transition: transform .12s ease, box-shadow .12s ease;
-  cursor: pointer;
 }
 .card:hover{ transform: translateY(-6px); box-shadow: 0 16px 40px rgba(20,20,20,0.08); }
 .card img{
