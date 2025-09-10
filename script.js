@@ -49,7 +49,7 @@
 function abrirWhatsApp(produto) {
   // Substitua pelo número da empresa (DDI + DDD + número) sem sinais e espaços.
   // Exemplo: 5511999999999
-  const numero = "558187075549";
+  const numero = "55SEUNUMERO";
   const mensagem = produto && produto.length
     ? `Olá! Tenho interesse no produto: ${produto}`
     : `Olá! Gostaria de mais informações sobre os produtos.`;
